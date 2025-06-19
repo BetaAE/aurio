@@ -58,7 +58,7 @@ class AboutScreen extends StatelessWidget {
                             .copyWith(fontSize: 16),
                       ),
                       trailing: Text(
-                        S.of(context).aurio,
+                        S.of(context).Gyawun,
                         style: smallTextStyle(context),
                       ),
                     ),
