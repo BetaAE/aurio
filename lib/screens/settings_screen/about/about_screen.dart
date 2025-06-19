@@ -91,7 +91,7 @@ class AboutScreen extends StatelessWidget {
                         crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
                           Text(
-                            S.of(context).Abdul_Mueed,
+                            'Abdul Mueed',
                             style: smallTextStyle(context),
                           ),
                           const SizedBox(width: 8),
@@ -117,7 +117,7 @@ class AboutScreen extends StatelessWidget {
                         crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
                           Text(
-                            S.of(context).Beta_AE,
+                            'Beta AE',
                             style: smallTextStyle(context),
                           ),
                           const SizedBox(width: 8),
