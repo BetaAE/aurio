@@ -14,7 +14,7 @@
     "@YTMusic": {},
     "Settings": "Ayarlar",
     "@Settings": {},
-    "Search_Gyawun": "Gyawun Ara",
+    "Search_Gyawun": "Aurio Ara",
     "@Search_Gyawun": {},
     "Favourites": "Favoriler",
     "@Favourites": {},
@@ -221,5 +221,11 @@
     "Remove_All_History_Message": "Tüm geçmişi temizlemek istediğinizden emin misiniz?",
     "@Remove_All_History_Message": {},
     "Copied_To_Clipboard": "Panoya Kopyalandı",
-    "@Copied_To_Clipboard": {}
+    "@Copied_To_Clipboard": {},
+    "aurio": "Aurio",
+    "Abdul_Mueed": "Abdul Mueed",
+    "Beta_AE": "Beta AE",
+    "Designed_by_BAE_🔧_Built_with_❤️_by_Abdul_Mueed": "BAE tarafından tasarlandı 🔧 Abdul Mueed tarafından ❤️ ile yapıldı",
+    "Community": "Topluluk",
+    "Search_aurio": "Aurio Ara"
 }

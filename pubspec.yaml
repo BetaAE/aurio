@@ -79,6 +79,12 @@ dependencies:
   # Toast
   fl_toast: ^3.2.0 # ❗ discontinued
 
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  yaml: ^3.1.2
+  logging: ^1.2.0
+  yaml_edit: ^2.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

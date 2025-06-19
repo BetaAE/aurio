@@ -14,7 +14,7 @@
     "@YTMusic": {},
     "Settings": "ترتیبات",
     "@Settings": {},
-    "Search_Gyawun": "گیاون تلاش کریں",
+    "Search_Gyawun": "آریو تلاش کریں",
     "@Search_Gyawun": {},
     "Favourites": "پسندیدہ",
     "@Favourites": {},
@@ -221,5 +221,11 @@
     "Remove_All_History_Message": "کیا آپ واقعی تمام تاریخ کو صاف کرنا چاہتے ہیں؟",
     "@Remove_All_History_Message": {},
     "Copied_To_Clipboard": "کلپ بورڈ پر کاپی کر دیا گیا",
-    "@Copied_To_Clipboard": {}
+    "@Copied_To_Clipboard": {},
+    "aurio": "آریو",
+    "Abdul_Mueed": "عبدالمعید",
+    "Beta_AE": "بیٹا اے ای",
+    "Designed_by_BAE_🔧_Built_with_❤️_by_Abdul_Mueed": "بی اے ای کے ذریعہ ڈیزائن کیا گیا 🔧 عبدالمعید کے ذریعہ ❤️ کے ساتھ بنایا گیا",
+    "Community": "کمیونٹی",
+    "Search_aurio": "آریو تلاش کریں"
 }

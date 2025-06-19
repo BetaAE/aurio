@@ -14,7 +14,7 @@
   "@YTMusic": {},
   "Settings": "Settings",
   "@Settings": {},
-  "Search_Gyawun": "Search Gyawun",
+  "Search_Gyawun": "Search aurio",
   "@Search_Gyawun": {},
   "Favourites": "Favourites",
   "@Favourites": {},
@@ -221,5 +221,11 @@
   "Remove_All_History_Message": "Are you sure you want to clear all history?",
   "@Remove_All_History_Message": {},
   "Copied_To_Clipboard": "Copied to Clipboard",
-  "@Copied_To_Clipboard": {}
+  "@Copied_To_Clipboard": {},
+  "aurio": "Aurio",
+  "Abdul_Mueed": "Abdul Mueed",
+  "Beta_AE": "Beta AE",
+  "Designed_by_BAE_🔧_Built_with_❤️_by_Abdul_Mueed": "Designed by BAE 🔧 Built with ❤️ by Abdul Mueed",
+  "Community": "Community",
+  "Search_aurio": "Search Aurio"
 }
