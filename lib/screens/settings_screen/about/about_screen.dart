@@ -217,7 +217,7 @@ class AboutScreen extends StatelessWidget {
                     Center(
                       child: Padding(
                         padding: const EdgeInsets.all(16),
-                        child: Text(S.of(context).Designed_by_BAE_🔧_Built_with_❤️_by_Abdul_Mueed),
+                        child: Text('BAE x Abdul Mueed'),
                       ),
                     ),
                   ],
