@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  text:
+  check:
     name: Check the source code quality
     runs-on: ubuntu-latest
     steps:
@@ -32,7 +32,8 @@ jobs:
       - name: build check
         run: flutter build apk
 
-      - uses: actions/upload-artifact@v4
-  with:
-    name: release-apk
-    path: build/app/outputs/flutter-apk/app-release.apk
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-apk
+          path: build/app/outputs/flutter-apk/app-release.apk
