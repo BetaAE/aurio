@@ -33,12 +33,18 @@ jobs:
         run: |
           echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/keystore.jks
 
+      - name: Debug keystore.jks
+        run: ls -l android/app/keystore.jks
+
       - name: Create key.properties
         run: |
           echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" >> key.properties
           echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> key.properties
           echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> key.properties
           echo "storeFile=keystore.jks" >> key.properties
+
+      - name: Debug key.properties
+        run: cat key.properties
 
       - name: Build Signed APK
         run: flutter build apk --release
