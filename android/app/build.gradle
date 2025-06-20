@@ -50,10 +50,12 @@ android {
 
     signingConfigs {
         release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
+            // Prefer key.properties for local builds, else fallback to environment variables (for CI/CD)
+            def useProps = keystoreProperties['storeFile'] != null && keystoreProperties['storePassword'] != null && keystoreProperties['keyAlias'] != null && keystoreProperties['keyPassword'] != null
+            storeFile file(useProps ? keystoreProperties['storeFile'] : 'keystore.jks')
+            storePassword useProps ? keystoreProperties['storePassword'] : System.getenv('KEYSTORE_PASSWORD')
+            keyAlias useProps ? keystoreProperties['keyAlias'] : System.getenv('KEY_ALIAS')
+            keyPassword useProps ? keystoreProperties['keyPassword'] : System.getenv('KEY_PASSWORD')
         }
     }
 
