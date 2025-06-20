@@ -29,11 +29,21 @@ jobs:
       - name: Linter
         run: flutter analyze || true
 
-      - name: build check
-        run: flutter build apk
+      - name: Decode Keystore
+        run: |
+          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/keystore.jks
 
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
+      - name: Create key.properties
+        run: |
+          echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" >> key.properties
+          echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> key.properties
+          echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> key.properties
+          echo "storeFile=keystore.jks" >> key.properties
+
+      - name: Build Signed APK
+        run: flutter build apk --release
+
+      - uses: actions/upload-artifact@v4
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
