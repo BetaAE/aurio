@@ -29,22 +29,9 @@ jobs:
       - name: Linter
         run: flutter analyze || true
 
-      - name: Decode Keystore
+      - name: Decode keystore
         run: |
           echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/keystore.jks
-
-      - name: Debug keystore.jks
-        run: ls -l android/app/keystore.jks
-
-      - name: Create key.properties
-        run: |
-          echo "storePassword=${{ secrets.KEYSTORE_PASSWORD }}" > android/key.properties
-          echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
-          echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
-          echo "storeFile=app/keystore.jks" >> android/key.properties
-
-      - name: Debug key.properties
-        run: cat android/key.properties
 
       - name: Build Signed APK
         run: flutter build apk --release
